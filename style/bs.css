@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+
+:root {
+  --font-family: 'Source Code Pro', monospace;
+}
+
+body {
+  
+  font-family: var(--font-family);
+  
+  background-image: linear-gradient(to bottom, #f7f7f7, #f7f7f7), url('https://picsum.photos/2000/1000'); /* Use a placeholder image */
+  background-size: cover;
+  
+  animation: slidein 10s infinite alternate; 
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0% 0%;
+    background-size: 100%; 
+  }
+  to {
+    background-position: 100% 0%; 
+    background-size: 100%; 
+  }
+}
+
+.center {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0; 
+  width: 100vw; 
+  height: 100vh;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 0; 
+}
+
+.center h1 {
+  text-align: center;
+  color: #333;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+}
